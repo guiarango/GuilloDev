@@ -1,0 +1,20 @@
+{
+  "name": "js_app_front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss public/styles/styles.css -w"
+  },
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
