@@ -16,13 +16,97 @@
       <section class="hero">
         <img src="/images/fotoPerfil.png" alt="Foto perfil" />
         <div>
-          <h2>Hello!, I'm</h2>
+          <h2>Hello! I'm</h2>
           <h1>Guillermo Arango</h1>
           <h2>Fullstack Developer</h2>
           <a href="#">Get resume <i class="fas fa-download"></i></a>
         </div>
+        <div class="technology-icons">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js-square"></i>
+          <i class="fab fa-node-js"></i>
+          <i class="fab fa-react"></i>
+          <i class="fas fa-database"></i>
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="projects-container">
+          <a href="#" class="project-container--card">
+            <div class="project-image image-1"></div>
+            <div class="project-description">
+              <h2><span style="color: #000">NextJS</span> project</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat.
+              </p>
+            </div>
+          </a>
+          <a href="#" class="project-container--card">
+            <div class="project-image image-2"></div>
+            <div class="project-description">
+              <h2><span style="color: #3c873a">NodeJS</span> project</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat.
+              </p>
+            </div>
+          </a>
+          <a href="#" class="project-container--card">
+            <div class="project-image image-3"></div>
+            <div class="project-description">
+              <h2><span style="color: #36dff8">ReactJS</span> project</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat.
+              </p>
+            </div>
+          </a>
+          <!-- <div class="project-container--card"></div> -->
+        </div>
+        <a href="#" class="viewAll">View all <i class="fas fa-search"></i></a>
+      </section>
+
+      <section class="experience">
+        <div class="experience-container">
+          <div class="experience-header">
+            <button class="education-button">Education</button>
+            <button class="experience-button">Experience</button>
+          </div>
+          <div class="experience-body">
+            <div class="row">
+              <div class="time"><div>2022-2023</div></div>
+              <div class="description">
+                <h2>Web developer</h2>
+                <p>Tennis S.A.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  cupiditate ipsam nemo soluta, error non eligendi reiciendis,
+                  illo doloremque, dolorum tempore est maiores velit architecto
+                  laboriosam obcaecati necessitatibus temporibus! Cum.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="time"><div>2021-2022</div></div>
+              <div class="description">
+                <h2>BI Analyst</h2>
+                <p>Tennis S.A.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  cupiditate ipsam nemo soluta, error non eligendi reiciendis,
+                  illo doloremque, dolorum tempore est maiores velit architecto
+                  laboriosam obcaecati necessitatibus temporibus! Cum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="education-body"></div>
+        </div>
       </section>
     </main>
     <%- include("partials/footer") %>
+    <script src="/js/selectExperienceOption.js"></script>
   </body>
 </html>

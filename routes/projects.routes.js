@@ -1,9 +1,9 @@
-const express = require("express");
-const router = express.Router();
+// const express = require("express");
+// const router = express.Router();
 
-// Controller
-const projectsController = require("../controllers/projectsController");
+// // Controller
+// const projectsController = require("../controllers/projectsController");
 
-router.get("/projects", projectsController.showPage);
+// router.get("/projects", projectsController.showPage);
 
-module.exports = router;
+// module.exports = router;

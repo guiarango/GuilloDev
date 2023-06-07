@@ -8,105 +8,32 @@ html {
   font-size: 16px;
   letter-spacing: 1.2px; }
 
+body {
+  overflow-x: hidden; }
+
 html {
   font-family: "Geologica", "Open Sans", sans-serif; }
 
-/* -----------------HEADER----------------- */
 header {
-  font-size: 20px;
-  font-weight: 500;
   position: sticky;
-  top: 0px;
-  overflow: hidden;
-  z-index: 10; }
-  header .desktop-nav {
-    display: none; }
-  header .mobile-nav {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    letter-spacing: 2; }
-    header .mobile-nav .logo {
-      width: 200px; }
-      header .mobile-nav .logo img {
-        width: 100%; }
-  header .sideNav {
-    width: 250px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    background-color: #ffffff;
-    z-index: 2;
-    transition: 0.5s;
-    right: -250px; }
-  header nav ul li {
-    list-style: none;
-    margin: 50px 20px; }
-  header nav ul li a {
-    text-decoration: none;
-    color: #000; }
-  header #menuBtn {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    z-index: 3;
-    cursor: pointer; }
-  header #menuBtn img {
-    width: 30px;
-    margin-top: 15px;
-    background-color: #fff; }
+  text-align: center;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  height: 100px;
+  margin-bottom: 30px; }
+  header img {
+    margin-top: 5px;
+    height: 100%; }
   header .icon-container-whatsapp {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
-    margin: 0rem 0.5rem; }
+    left: 40px;
+    bottom: 40px;
+    font-size: 60px; }
   header .fa-whatsapp-square {
     color: #25d366;
     font-size: 40px;
     z-index: 100; }
-
-@media (min-width: 1000px) {
-  header .desktop-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    header .desktop-nav::after {
-      content: "";
-      height: 1px;
-      width: 300px;
-      background-color: #000000; }
-    header .desktop-nav .item-logo .logo {
-      width: 100%;
-      text-align: center; }
-      header .desktop-nav .item-logo .logo img {
-        width: 100%; }
-    header .desktop-nav ul {
-      background-color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px 0 30px 0;
-      letter-spacing: 2px;
-      text-align: center;
-      width: 90%;
-      max-width: 1200px; }
-      header .desktop-nav ul li {
-        position: relative;
-        font-size: 25px; }
-        header .desktop-nav ul li img {
-          width: 100%; }
-  header .mobile-nav {
-    display: none; }
-  header nav ul li {
-    list-style: none;
-    margin: 0px 0px;
-    width: 20%; }
-  header .icon-container-whatsapp {
-    right: 40px;
-    bottom: 40px; }
-  header .fa-whatsapp-square {
-    font-size: 60px; } }
 
 footer {
   background-color: rgba(0, 0, 0, 0.8);
@@ -160,21 +87,20 @@ footer {
 .home {
   width: 100%; }
   .home .hero {
+    max-width: 1200px;
     width: 95%;
     margin: auto;
-    max-width: 1200px;
     display: flex;
     flex-direction: column;
     position: relative;
-    align-items: left;
     margin-bottom: 30px; }
     .home .hero div {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       margin-top: 30px; }
       .home .hero div h1 {
-        font-size: 40px;
+        font-size: 30px;
         margin: 10px 0 10px 0; }
       .home .hero div h2 {
         font-size: 20px; }
@@ -185,20 +111,143 @@ footer {
         width: 200px;
         text-decoration: none;
         color: #000000;
-        border: 0.5px solid #000000;
         border-radius: 50px;
         padding: 20px 30px;
         margin-top: 30px;
         transition: 0.1s;
-        cursor: pointer; }
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; }
         .home .hero div a:hover {
           background-color: #000000;
           color: #ffffff;
-          font-weight: bold;
-          transform: translate(2px, -2px); }
+          font-weight: bold; }
     .home .hero img {
       width: 100%;
       border-radius: 5px; }
+    .home .hero .technology-icons {
+      margin-top: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 30px; }
+      .home .hero .technology-icons i {
+        font-size: 50px;
+        cursor: pointer;
+        transition: 0.2s; }
+        .home .hero .technology-icons i:hover {
+          padding-bottom: 5px;
+          border-bottom: 5px solid #68faff; }
+      .home .hero .technology-icons .fa-html5 {
+        color: #f16529; }
+      .home .hero .technology-icons .fa-css3-alt {
+        color: #264de4; }
+      .home .hero .technology-icons .fa-js-square {
+        color: #f0db4f; }
+      .home .hero .technology-icons .fa-node-js {
+        color: #3c873a; }
+      .home .hero .technology-icons .fa-react {
+        color: #36dff8; }
+      .home .hero .technology-icons .fa-database {
+        color: #929292; }
+  .home .projects {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .home .projects .viewAll {
+      text-decoration: none;
+      color: #000000;
+      margin-bottom: 60px;
+      border-radius: 50px;
+      padding: 20px 30px;
+      margin-top: 30px;
+      transition: 0.1s;
+      cursor: pointer;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; }
+      .home .projects .viewAll:hover {
+        background-color: #000000;
+        color: #ffffff;
+        font-weight: bold; }
+    .home .projects .projects-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      padding: 60px 0 30px 0; }
+      .home .projects .projects-container .project-container--card {
+        text-decoration: none;
+        color: #000000;
+        text-align: center;
+        height: 280px;
+        width: 47%;
+        border-radius: 5px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        margin-bottom: 30px; }
+        .home .projects .projects-container .project-container--card .project-image {
+          width: 100%;
+          height: 120px;
+          border-radius: 5px; }
+          .home .projects .projects-container .project-container--card .project-image.image-1, .home .projects .projects-container .project-container--card .project-image.image-2, .home .projects .projects-container .project-container--card .project-image.image-3 {
+            background: url("/images/prueba.png");
+            background-size: cover;
+            background-position: center; }
+        .home .projects .projects-container .project-container--card .project-description {
+          padding: 10px; }
+          .home .projects .projects-container .project-container--card .project-description h2 {
+            font-size: 16px;
+            margin-bottom: 15px; }
+          .home .projects .projects-container .project-container--card .project-description p {
+            font-size: 10; }
+  .home .experience {
+    margin-top: 60px; }
+    .home .experience .experience-container {
+      width: 90%;
+      margin: auto; }
+      .home .experience .experience-container .experience-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px; }
+        .home .experience .experience-container .experience-header button {
+          font-size: 24px;
+          width: 100%;
+          padding: 30px;
+          border: 1px solid #929292;
+          background-color: #ffffff;
+          transition: 0.1s;
+          margin-bottom: 20px;
+          cursor: pointer; }
+      .home .experience .experience-container .experience-body .row,
+      .home .experience .experience-container .education-body .row {
+        display: flex;
+        border: 1px solid #929292;
+        min-height: 150px; }
+        .home .experience .experience-container .experience-body .row .time,
+        .home .experience .experience-container .education-body .row .time {
+          width: 150px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          border-right: 1px solid #929292; }
+          .home .experience .experience-container .experience-body .row .time div,
+          .home .experience .experience-container .education-body .row .time div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-right: 2px solid #929292;
+            height: 50px; }
+        .home .experience .experience-container .experience-body .row .description,
+        .home .experience .experience-container .education-body .row .description {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          margin: 0 30px; }
+          .home .experience .experience-container .experience-body .row .description > *,
+          .home .experience .experience-container .education-body .row .description > * {
+            margin-bottom: 10px; }
 
 @media (min-width: 750px) {
   .home {
@@ -206,15 +255,54 @@ footer {
     .home .hero {
       flex-direction: row;
       margin-top: 90px; }
+      .home .hero img {
+        width: 400px; }
       .home .hero div {
-        margin-top: 90px;
-        margin-left: -30px; }
+        margin-top: 50px;
+        margin-left: -30px;
+        align-items: flex-start; }
         .home .hero div h1 {
-          font-size: 50px; }
+          font-size: 36px; }
         .home .hero div h2 {
-          font-size: 25px; }
+          font-size: 22px; }
         .home .hero div a {
           width: 250px;
           padding: 25px 40px; }
-      .home .hero img {
-        width: 500px; } }
+      .home .hero .technology-icons {
+        flex-direction: column;
+        margin-top: 0px;
+        margin-left: 30px; } }
+
+@media (min-width: 1000px) {
+  .home .hero {
+    justify-content: space-evenly; }
+    .home .hero div {
+      margin-top: 90px;
+      margin-left: -100px; }
+    .home .hero img {
+      width: 500px; }
+  .home .projects .projects-container .project-container--card {
+    height: 350px;
+    width: 28%; }
+    .home .projects .projects-container .project-container--card .project-image {
+      width: 100%;
+      height: 150px;
+      border-radius: 5px; }
+    .home .projects .projects-container .project-container--card .project-description {
+      padding: 10px; }
+      .home .projects .projects-container .project-container--card .project-description h2 {
+        font-size: 24px;
+        margin-bottom: 15px; }
+      .home .projects .projects-container .project-container--card .project-description p {
+        font-size: 16px; }
+  .home .experience .experience-container .experience-header {
+    flex-direction: row;
+    gap: 20px; }
+    .home .experience .experience-container .experience-header button {
+      width: 45%; } }
+
+@media (min-width: 1100px) {
+  .home .hero div {
+    margin-left: -120px; }
+  .home .hero img {
+    width: 550px; } }

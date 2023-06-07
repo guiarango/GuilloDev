@@ -11,13 +11,13 @@ app.use(express.static(publicPath));
 
 //Routes import
 const homeRoute = require("./routes/home.routes");
-const aboutRoute = require("./routes/about.routes");
-const projectsRoute = require("./routes/projects.routes");
+// const aboutRoute = require("./routes/about.routes");
+// const projectsRoute = require("./routes/projects.routes");
 
 // Routes use
 app.use(homeRoute);
-app.use(aboutRoute);
-app.use(projectsRoute);
+// app.use(aboutRoute);
+// app.use(projectsRoute);
 
 // Set Template engine
 app.set("view engine", "ejs");
